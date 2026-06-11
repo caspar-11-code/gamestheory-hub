@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="color-scheme" content="dark" />
+
+  <!-- Security: strict CSP. No inline scripts/styles, no external origins. -->
+  <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'; connect-src 'self'; font-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'" />
+  <meta name="referrer" content="no-referrer" />
+
+  <title>Games Theory — tiny games about big decisions</title>
+  <meta name="description" content="Free browser games and social experiments about choices, crowds and markets. Two Buttons Dilemma, CANDLE and more. No accounts, no tracking — just play." />
+
+  <meta property="og:title" content="Games Theory — tiny games about big decisions" />
+  <meta property="og:description" content="Free browser games and social experiments about choices, crowds and markets. No accounts, no tracking — just play." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://gamestheory.org/" />
+
+  <link rel="icon" href="icon.svg" type="image/svg+xml" />
+  <meta name="theme-color" content="#0b0f17" />
+
+  <link rel="stylesheet" href="styles.css" />
+  <script src="hub.js" defer></script>
+</head>
+<body>
+  <header class="top">
+    <div class="brand">
+      <svg class="brand__mark" viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+        <circle cx="10" cy="10" r="5" class="m-red" />
+        <circle cx="22" cy="10" r="5" class="m-blue" />
+        <rect x="6" y="19" width="8" height="8" rx="2" class="m-green" />
+        <rect x="18" y="19" width="8" height="8" rx="2" class="m-amber" />
+      </svg>
+      <span class="brand__name">GAMES<em>THEORY</em></span>
+    </div>
+    <button id="btn-lang" class="lang-btn" type="button" aria-label="Language">EN</button>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <h1 data-i18n="tagline">Tiny games. Big decisions.</h1>
+      <p data-i18n="sub">Free browser experiments about choices, crowds and markets. No accounts, no ads, no tracking — just play.</p>
+    </section>
+
+    <section class="grid" aria-label="Games">
+      <a class="card" href="https://twobuttons.gamestheory.org/">
+        <div class="card__art" aria-hidden="true">
+          <svg viewBox="0 0 200 110" focusable="false">
+            <rect x="22" y="28" width="68" height="54" rx="12" class="a-red" />
+            <rect x="110" y="28" width="68" height="54" rx="12" class="a-blue" />
+            <circle cx="56" cy="55" r="9" class="a-red-glow" />
+            <circle cx="144" cy="55" r="9" class="a-blue-glow" />
+          </svg>
+        </div>
+        <h2>Two Buttons Dilemma</h2>
+        <p data-i18n="tb_desc">One choice, two buttons, live results from the whole planet. A social experiment straight out of game theory.</p>
+        <span class="card__cta"><span data-i18n="play">Play</span> →</span>
+      </a>
+
+      <a class="card" href="https://candles.gamestheory.org/">
+        <div class="card__art" aria-hidden="true">
+          <svg viewBox="0 0 200 110" focusable="false">
+            <line x1="50" y1="18" x2="50" y2="95" class="w-green" />
+            <rect x="41" y="42" width="18" height="40" rx="3" class="a-green" />
+            <line x1="100" y1="10" x2="100" y2="88" class="w-red" />
+            <rect x="91" y="26" width="18" height="34" rx="3" class="a-rose" />
+            <line x1="150" y1="25" x2="150" y2="100" class="w-green" />
+            <rect x="141" y="48" width="18" height="38" rx="3" class="a-green" />
+          </svg>
+        </div>
+        <h2>CANDLE</h2>
+        <p data-i18n="candle_desc">A daily market-reading puzzle. Call the next candle, read real indicators, keep your streak.</p>
+        <span class="card__cta"><span data-i18n="play">Play</span> →</span>
+      </a>
+
+      <div class="card card--soon" aria-hidden="true">
+        <div class="card__art">
+          <svg viewBox="0 0 200 110" focusable="false">
+            <circle cx="100" cy="55" r="34" class="a-dash" />
+            <text x="100" y="64" class="a-q">?</text>
+          </svg>
+        </div>
+        <h2 data-i18n="soon_title">Something's brewing</h2>
+        <p data-i18n="soon_desc">The next experiment is loading…</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <p>© <span id="year">2026</span> gamestheory.org</p>
+    <a class="gh" href="https://github.com/caspar-11-code" target="_blank" rel="noopener noreferrer">
+      <svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>
+      <span data-i18n="footer_gh">Open source on GitHub</span>
+    </a>
+  </footer>
+</body>
+</html>
