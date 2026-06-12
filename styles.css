@@ -106,7 +106,9 @@ body::before {
   font-size: clamp(1.9rem, 5.4vw, 3.2rem);
   font-weight: 800;
   letter-spacing: -0.02em;
-  line-height: 1.08;
+  /* roomy line box + bottom padding so background-clip:text covers descenders */
+  line-height: 1.22;
+  padding-bottom: 0.08em;
   background: linear-gradient(120deg, var(--text) 30%, var(--blue) 70%, var(--green) 100%);
   -webkit-background-clip: text;
   background-clip: text;
