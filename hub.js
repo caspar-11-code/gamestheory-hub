@@ -10,6 +10,8 @@
         "One choice, two buttons, live results from the whole planet. A social experiment straight out of game theory.",
       candle_desc:
         "A daily market-reading puzzle. Call the next candle, read real indicators, keep your streak.",
+      wt_desc:
+        "Draw a 2D shape and watch real airflow bend around it — streamlines, wake and vortices. Fluid dynamics you can doodle.",
       play: "Play",
       soon_title: "Something's brewing",
       soon_desc: "The next experiment is loading…",
@@ -22,6 +24,8 @@
         "Jeden wybór, dwa przyciski i wyniki na żywo z całej planety. Eksperyment społeczny rodem z teorii gier.",
       candle_desc:
         "Codzienna łamigłówka czytania wykresów. Wytypuj następną świecę, czytaj prawdziwe wskaźniki, buduj serię.",
+      wt_desc:
+        "Narysuj kształt 2D i patrz, jak realne powietrze zakrzywia się wokół niego — strugi, ślad i wiry. Dynamika płynów, którą można bazgrać.",
       play: "Graj",
       soon_title: "Coś się szykuje",
       soon_desc: "Następny eksperyment się ładuje…",

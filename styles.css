@@ -125,7 +125,7 @@ body::before {
 /* ---------- Cards ---------- */
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(264px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(228px, 1fr));
   gap: 18px;
 }
 
@@ -181,6 +181,8 @@ a.card:hover .card__cta { text-decoration: underline; text-underline-offset: 3px
 .a-rose { fill: var(--red); }
 .w-green { stroke: var(--green); stroke-width: 4; stroke-linecap: round; }
 .w-red { stroke: var(--red); stroke-width: 4; stroke-linecap: round; }
+.w-flow { fill: none; stroke: #35d0e0; stroke-width: 2.4; stroke-linecap: round; opacity: 0.85; }
+.a-foil { fill: var(--blue); }
 .a-dash { fill: none; stroke: var(--text-faint); stroke-width: 2; stroke-dasharray: 7 7; }
 .a-q {
   fill: var(--text-faint);

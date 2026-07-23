@@ -28,6 +28,30 @@
   <link rel="apple-touch-icon" href="icon-180.png" />
   <meta name="theme-color" content="#0b0f17" />
 
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "name": "Games Theory",
+        "url": "https://gamestheory.org/",
+        "description": "Free browser games and social experiments about choices, crowds and markets. No accounts, no tracking.",
+        "inLanguage": ["en", "pl"]
+      },
+      {
+        "@type": "ItemList",
+        "name": "Games",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Two Buttons Dilemma", "url": "https://twobuttons.gamestheory.org/" },
+          { "@type": "ListItem", "position": 2, "name": "CANDLE", "url": "https://candles.gamestheory.org/" },
+          { "@type": "ListItem", "position": 3, "name": "Wind Tunnel", "url": "https://tunnel.gamestheory.org/" }
+        ]
+      }
+    ]
+  }
+  </script>
+
   <link rel="stylesheet" href="styles.css" />
   <script src="hub.js" defer></script>
 </head>
@@ -79,6 +103,21 @@
         </div>
         <h2>CANDLE</h2>
         <p data-i18n="candle_desc">A daily market-reading puzzle. Call the next candle, read real indicators, keep your streak.</p>
+        <span class="card__cta"><span data-i18n="play">Play</span> →</span>
+      </a>
+
+      <a class="card" href="https://tunnel.gamestheory.org/">
+        <div class="card__art" aria-hidden="true">
+          <svg viewBox="0 0 200 110" focusable="false">
+            <path class="w-flow" d="M16 30 C74 30 92 40 184 36" />
+            <path class="w-flow" d="M16 45 C74 45 96 50 184 48" />
+            <path class="w-flow" d="M16 66 C74 66 96 60 184 62" />
+            <path class="w-flow" d="M16 81 C74 81 92 71 184 76" />
+            <ellipse class="a-foil" cx="98" cy="56" rx="36" ry="9" transform="rotate(-13 98 56)" />
+          </svg>
+        </div>
+        <h2>Wind Tunnel</h2>
+        <p data-i18n="wt_desc">Draw a 2D shape and watch real airflow bend around it — streamlines, wake and vortices. Fluid dynamics you can doodle.</p>
         <span class="card__cta"><span data-i18n="play">Play</span> →</span>
       </a>
 
