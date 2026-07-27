@@ -7,7 +7,7 @@
 
   <!-- Security: strict CSP. No inline scripts/styles, no external origins. -->
   <meta http-equiv="Content-Security-Policy"
-        content="default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'; connect-src 'self'; font-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'" />
+        content="default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'; connect-src 'self'; font-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'" />
   <meta name="referrer" content="no-referrer" />
 
   <title>Games Theory — tiny games about big decisions</title>
@@ -52,8 +52,8 @@
   }
   </script>
 
-  <link rel="stylesheet" href="styles.css?v=3" />
-  <script src="hub.js?v=3" defer></script>
+  <link rel="stylesheet" href="styles.css?v=4" />
+  <script src="hub.js?v=4" defer></script>
 </head>
 <body>
   <header class="top">
@@ -66,7 +66,7 @@
       </svg>
       <span class="brand__name">GAMES<em>THEORY</em></span>
     </div>
-    <button id="btn-lang" class="lang-btn" type="button" aria-label="Language">EN</button>
+    <button id="btn-lang" class="lang-btn" type="button" aria-label="Language" data-i18n-aria="aria_lang">EN</button>
   </header>
 
   <main class="wrap">
@@ -75,7 +75,7 @@
       <p data-i18n="sub">Free browser experiments about choices, crowds and markets. No accounts, no ads, no tracking — just play.</p>
     </section>
 
-    <section class="grid" aria-label="Games">
+    <section class="grid" aria-label="Games" data-i18n-aria="aria_games">
       <a class="card" href="https://twobuttons.gamestheory.org/">
         <div class="card__art" aria-hidden="true">
           <svg viewBox="0 0 200 110" focusable="false">

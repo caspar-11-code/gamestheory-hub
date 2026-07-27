@@ -13,8 +13,8 @@
       wt_desc:
         "Draw a 2D shape and watch real airflow bend around it — streamlines, wake and vortices. Fluid dynamics you can doodle.",
       play: "Play",
-      soon_title: "Something's brewing",
-      soon_desc: "The next experiment is loading…",
+      aria_games: "Games",
+      aria_lang: "Language",
       footer_gh: "Open source on GitHub",
     },
     pl: {
@@ -27,8 +27,8 @@
       wt_desc:
         "Narysuj kształt 2D i patrz, jak realne powietrze zakrzywia się wokół niego — strugi, ślad i wiry. Dynamika płynów, którą można bazgrać.",
       play: "Graj",
-      soon_title: "Coś się szykuje",
-      soon_desc: "Następny eksperyment się ładuje…",
+      aria_games: "Gry",
+      aria_lang: "Język",
       footer_gh: "Kod źródłowy na GitHubie",
     },
   };
@@ -54,6 +54,10 @@
     document.querySelectorAll("[data-i18n]").forEach((el) => {
       const s = STR[lang][el.dataset.i18n];
       if (s != null) el.textContent = s;
+    });
+    document.querySelectorAll("[data-i18n-aria]").forEach((el) => {
+      const s = STR[lang][el.dataset.i18nAria];
+      if (s != null) el.setAttribute("aria-label", s);
     });
   }
 
